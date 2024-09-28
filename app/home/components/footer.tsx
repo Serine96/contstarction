@@ -12,8 +12,11 @@ const Footer: FC<Props> = ({ propsRef }) => {
     return (
         <footer ref={propsRef} className={classes["footer"]}>
             <div className={classes["footer_container"]}>
-                <div className={classes["image_div"]}>
-                    <Image src={"/img/logo.png"} alt="img" width={150} height={150} />
+                <div className={classes["logo_container"]}>
+                    <div className={classes["image_div"]}>
+                        <Image src={"/img/logo.png"} alt="img" width={150} height={150} />
+                    </div>
+                    <h2>Construction Group</h2>
                 </div>
 
                 <div className={classes["container_info"]}>
