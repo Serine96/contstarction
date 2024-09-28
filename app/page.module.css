@@ -1,0 +1,11 @@
+.main {
+    position: relative;
+    display: flex;
+    max-width: 1440px;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}

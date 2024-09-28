@@ -1,0 +1,104 @@
+@import "../../style/styles.module.scss";
+.home_main {
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.home_section {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+}
+
+.home_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.home_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 5;
+    .home_title {
+        font-family: Lexend;
+        font-size: 64px;
+        line-height: 84px;
+        font-weight: 700;
+        color: #ffffffff;
+        @include mediaTo(1220px) {
+            font-size: 40px;
+            line-height: 60px;
+            text-align: center;
+        }
+        @include mediaTo(767px) {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        @include mediaTo(520px) {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+    h3 {
+        font-family: Manrope;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 400;
+        color: #66d6ffff;
+        @include mediaTo(767px) {
+            text-align: center;
+            font-size: 22px;
+        }
+    }
+}
+.blur_div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #171a1f66;
+    z-index: 1;
+}
+
+@media screen and (max-width: 920px) {
+    .home_section {
+        height: 600px;
+    }
+    .home_main {
+        height: 600px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .home_title {
+        font-size: 38px;
+        padding: 30;
+    }
+    .home_section {
+        height: 400px;
+    }
+    .home_main {
+        height: 400px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .home_section {
+        height: 350px;
+    }
+    .home_main {
+        height: 350px;
+    }
+}
